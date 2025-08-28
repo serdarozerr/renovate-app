@@ -11,5 +11,7 @@
     ],
     "pip_requirements": {
       "fileMatch": ["^requirements\\.txt$"]
-    }
+    },
+    "baseBranchPatterns": ["main", "feature/.*"],
+    "useBaseBranchConfig": "merge"
   }
