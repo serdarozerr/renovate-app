@@ -2,23 +2,14 @@
     "extends": [
       "config:base"
     ],
-    "regexManagers": [
-      {
-        "fileMatch": ["^.github/workflows/.*\\.yml$"],
-        "matchStrings": [
-          "image:\\s*python:(?<currentValue>\\d+\\.\\d+)"
-        ],
-        "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
-        "depNameTemplate": "python",
-        "datasourceTemplate": "docker",
-        "versioningTemplate": "docker"
-      }
-    ],
     "packageRules": [
       {
-        "matchPackageNames": ["python"],
-        "matchDatasources": ["docker"],
-        "automerge": false
+        "matchManagers": ["pip_requirements"],
+        "rangeStrategy": "pin",
+        "labels": ["pip-dependencies"]
       }
-    ]
+    ],
+    "pip_requirements": {
+      "fileMatch": ["^requirements\\.txt$"]
+    }
   }
