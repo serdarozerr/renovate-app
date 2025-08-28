@@ -1,0 +1,17 @@
+name: Simple Workflow
+
+on: [push]
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.9
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo messages
+        run: |
+          echo "Hello, this is a simple Python container workflow!"
+          echo "The workflow has been executed successfully."
