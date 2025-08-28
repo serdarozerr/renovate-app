@@ -19,6 +19,9 @@
         "matchPackageNames": ["python"],
         "matchDatasources": ["docker"],
         "automerge": false
+
+
+        
       }
     ]
   }
