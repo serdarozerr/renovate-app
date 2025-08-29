@@ -4,7 +4,7 @@
     ],
     "regexManagers": [
       {
-        "fileMatch": ["^.github/workflows/.*\\.yml$"],
+        "fileMatch": ["^\\.github/workflows/.*\\.yml$"],
         "matchStrings": [
           "image:\\s*python:(?<currentValue>\\d+\\.\\d+)"
         ],
@@ -19,5 +19,8 @@
         "matchDatasources": ["docker"],
         "automerge": false
       }
+    ],
+    "includePaths": [
+      ".github/workflows/**"
     ]
   }
