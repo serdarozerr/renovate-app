@@ -2,6 +2,7 @@
     "extends": [
       "config:base"
     ],
+    "logLevel": "debug",
     "regexManagers": [
       {
         "fileMatch": ["^\\.github/workflows/.*\\.yml$"],
@@ -17,9 +18,11 @@
       {
         "matchPackageNames": ["python"],
         "matchDatasources": ["docker"],
-        "automerge": false
+        "automerge": false,
+        "enabled": true
       }
     ],
+    "enabledManagers": ["regex"],
     "includePaths": [
       ".github/workflows/**"
     ]
