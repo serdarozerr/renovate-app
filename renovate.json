@@ -3,6 +3,8 @@
       "config:base"
     ],
     "logLevel": "debug",
+    "branchPrefix": "renovate/feature-new-version/",
+    "baseBranches": ["feature/new-version"],
     "regexManagers": [
       {
         "fileMatch": ["^\\.github/workflows/.*\\.yml$"],
