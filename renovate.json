@@ -8,7 +8,6 @@
         "matchStrings": [
           "image:\\s*python:(?<currentValue>\\d+\\.\\d+)"
         ],
-        "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
         "depNameTemplate": "python",
         "datasourceTemplate": "docker",
         "versioningTemplate": "docker"
@@ -19,9 +18,6 @@
         "matchPackageNames": ["python"],
         "matchDatasources": ["docker"],
         "automerge": false
-
-
-        
       }
     ]
   }
