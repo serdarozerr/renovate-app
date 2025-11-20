@@ -9,7 +9,7 @@ jobs:
       image: python:3.12
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Echo messages
         run: |
